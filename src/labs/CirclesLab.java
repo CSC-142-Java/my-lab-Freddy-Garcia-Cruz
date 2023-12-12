@@ -1,63 +1,464 @@
 package labs;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
+import java.awt.font.FontRenderContext;
+import java.awt.font.GlyphVector;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Ellipse2D;
+import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImageOp;
+import java.awt.image.ImageObserver;
+import java.awt.image.RenderedImage;
+import java.awt.image.renderable.RenderableImage;
+import java.text.AttributedCharacterIterator;
+import java.util.Map;
+
+interface Drawable {
 
 
+    }
+
+
+class display {
+
+    public display() {
+    }
+
+    public void setBackground() {
+    }
+
+    public Graphics2D getGraphics() {
+
+        return new Graphics2D() {
+            @Override
+            public void draw(Shape s) {
+
+            }
+
+            @Override
+            public boolean drawImage(Image img, AffineTransform form, ImageObserver obs) {
+                return false;
+            }
+
+            @Override
+            public void drawImage(BufferedImage img, BufferedImageOp op, int x, int y) {
+
+            }
+
+            @Override
+            public void drawRenderedImage(RenderedImage img, AffineTransform form) {
+
+            }
+
+            @Override
+            public void drawRenderableImage(RenderableImage img, AffineTransform form) {
+
+            }
+
+            @Override
+            public void drawString(String str, int x, int y) {
+
+            }
+
+            @Override
+            public void drawString(String str, float x, float y) {
+
+            }
+
+            @Override
+            public void drawString(AttributedCharacterIterator iterator, int x, int y) {
+
+            }
+
+            @Override
+            public boolean drawImage(Image img, int x, int y, ImageObserver observer) {
+                return false;
+            }
+
+            @Override
+            public boolean drawImage(Image img, int x, int y, int width, int height, ImageObserver observer) {
+                return false;
+            }
+
+            @Override
+            public boolean drawImage(Image img, int x, int y, Color bgcolor, ImageObserver observer) {
+                return false;
+            }
+
+            @Override
+            public boolean drawImage(Image img, int x, int y, int width, int height, Color bgcolor, ImageObserver observer) {
+                return false;
+            }
+
+            @Override
+            public boolean drawImage(Image img, int dx1, int dy1, int dx2, int dy2, int sx1, int sy1, int sx2, int sy2, ImageObserver observer) {
+                return false;
+            }
+
+            @Override
+            public boolean drawImage(Image img, int dx1, int dy1, int dx2, int dy2, int sx1, int sy1, int sx2, int sy2, Color bgcolor, ImageObserver observer) {
+                return false;
+            }
+
+            @Override
+            public void dispose() {
+
+            }
+
+            @Override
+            public void drawString(AttributedCharacterIterator iterator, float x, float y) {
+
+            }
+
+            @Override
+            public void drawGlyphVector(GlyphVector g, float x, float y) {
+
+            }
+
+            @Override
+            public void fill(Shape s) {
+
+            }
+
+            @Override
+            public boolean hit(Rectangle rect, Shape s, boolean onStroke) {
+                return false;
+            }
+
+            @Override
+            public GraphicsConfiguration getDeviceConfiguration() {
+                return null;
+            }
+
+            @Override
+            public void setComposite(Composite comp) {
+
+            }
+
+            @Override
+            public void setPaint(Paint paint) {
+
+            }
+
+            @Override
+            public void setStroke(Stroke s) {
+
+            }
+
+            @Override
+            public void setRenderingHint(RenderingHints.Key hintKey, Object hintValue) {
+
+            }
+
+            @Override
+            public Object getRenderingHint(RenderingHints.Key hintKey) {
+                return null;
+            }
+
+            @Override
+            public void setRenderingHints(Map<?, ?> hints) {
+
+            }
+
+            @Override
+            public void addRenderingHints(Map<?, ?> hints) {
+
+            }
+
+            @Override
+            public RenderingHints getRenderingHints() {
+                return null;
+            }
+
+            @Override
+            public Graphics create() {
+                return null;
+            }
+
+            @Override
+            public void translate(int x, int y) {
+
+            }
+
+            @Override
+            public Color getColor() {
+                return null;
+            }
+
+            @Override
+            public void setColor(Color c) {
+
+            }
+
+            @Override
+            public void setPaintMode() {
+
+            }
+
+            @Override
+            public void setXORMode(Color c1) {
+
+            }
+
+            @Override
+            public Font getFont() {
+                return null;
+            }
+
+            @Override
+            public void setFont(Font font) {
+
+            }
+
+            @Override
+            public FontMetrics getFontMetrics(Font f) {
+                return null;
+            }
+
+            @Override
+            public Rectangle getClipBounds() {
+                return null;
+            }
+
+            @Override
+            public void clipRect(int x, int y, int width, int height) {
+
+            }
+
+            @Override
+            public void setClip(int x, int y, int width, int height) {
+
+            }
+
+            @Override
+            public Shape getClip() {
+                return null;
+            }
+
+            @Override
+            public void setClip(Shape clip) {
+
+            }
+
+            @Override
+            public void copyArea(int x, int y, int width, int height, int dx, int dy) {
+
+            }
+
+            @Override
+            public void drawLine(int x1, int y1, int x2, int y2) {
+
+            }
+
+            @Override
+            public void fillRect(int x, int y, int width, int height) {
+
+            }
+
+            @Override
+            public void clearRect(int x, int y, int width, int height) {
+
+            }
+
+            @Override
+            public void drawRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) {
+
+            }
+
+            @Override
+            public void fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) {
+
+            }
+
+            @Override
+            public void drawOval(int x, int y, int width, int height) {
+
+            }
+
+            @Override
+            public void fillOval(int x, int y, int width, int height) {
+
+            }
+
+            @Override
+            public void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle) {
+
+            }
+
+            @Override
+            public void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle) {
+
+            }
+
+            @Override
+            public void drawPolyline(int[] xPoints, int[] yPoints, int nPoints) {
+
+            }
+
+            @Override
+            public void drawPolygon(int[] xPoints, int[] yPoints, int nPoints) {
+
+            }
+
+            @Override
+            public void fillPolygon(int[] xPoints, int[] yPoints, int nPoints) {
+
+            }
+
+            @Override
+            public void translate(double tx, double ty) {
+
+            }
+
+            @Override
+            public void rotate(double theta) {
+
+            }
+
+            @Override
+            public void rotate(double theta, double x, double y) {
+
+            }
+
+            @Override
+            public void scale(double sx, double sy) {
+
+            }
+
+            @Override
+            public void shear(double shx, double shy) {
+
+            }
+
+            @Override
+            public void transform(AffineTransform Tx) {
+
+            }
+
+            @Override
+            public void setTransform(AffineTransform Tx) {
+
+            }
+
+            @Override
+            public AffineTransform getTransform() {
+                return null;
+            }
+
+            @Override
+            public Paint getPaint() {
+                return null;
+            }
+
+            @Override
+            public Composite getComposite() {
+                return null;
+            }
+
+            @Override
+            public void setBackground(Color color) {
+
+            }
+
+            @Override
+            public Color getBackground() {
+                return null;
+            }
+
+            @Override
+            public Stroke getStroke() {
+                return null;
+            }
+
+            @Override
+            public void clip(Shape s) {
+
+            }
+
+            @Override
+            public FontRenderContext getFontRenderContext() {
+                return null;
+            }
+        };
+    }
+
+    public void pause() {// Implement pausing the display for the specified milliseconds
+    }
+}
+
+class CircularFillable extends Filable {
+    private int x, y;
+    private Color color;
+
+    public CircularFillable(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public void setLocation(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    @Override
+    public void drawFillable(Graphics2D graphics) {
+        graphics.setColor(color);
+        graphics.fill(new Ellipse2D.Double(x, y, 50, 50)); // Example circle size: 50x50
+    }
+
+    @Override
+    public void move(int dx, int dy) {
+        this.x += dx;
+        this.y += dy;
+    }
+}
+
+@SuppressWarnings("ALL")
 public class CirclesLab {
 
-//    public static void testDrawable(Viewer display, Drawable circles) throws Exception {
-//
-//        //TODO: Set Location to (50, 50)
-//
-//        // TODO : Clear then Pause for 250 milliseconds
-//        display.pause(250);
-//
-//        // TODO : Move location by (50, 0) and draw Yellow Circles
-//
-//        // TODO : Move location by (0, 100) and draw RED Circles
-//
-//        // TODO : Move location by (0, 100) and draw Circles with Fillable AZUL
-//
-//        // TODO : Pause for 250 milliseconds
-//
-//    }
-//
-//    public static void testFillable(Viewer display, Fillable circles) throws Exception {
-//
-//        //TODO: Set Location to (40, 40)
-//
-//        // TODO : Pause for 250 milliseconds
-//        display.pause(250);
-//
-//        // TODO : Draw fillable RED Circles then move (-25,40)
-//
-//        // TODO : Draw fillable WHITE Circles then move (50,-50)
-//
-//        // TODO : Draw fillable AZUL Circles
-//
-//        // TODO : Pause for 250 milliseconds
-//
-//    }
+    // Test the Fillable interface
+    public static void testFillable(display display, Filable circles) {
+        // Example implementation
+        circles.setLocation(40, 40);
+        display.pause();
+        circles.setColor(Color.RED);
+        circles.drawFillable(display.getGraphics());
+        circles.move(-25, 40);
+        circles.setColor(Color.WHITE);
+        circles.drawFillable(display.getGraphics());
+        circles.move(50, -50);
+        circles.setColor(Color.BLUE);
+        circles.drawFillable(display.getGraphics());
+        display.pause();
+    }
 
-    public static void main(String[] args) throws Exception{
+    // Test the Drawable interface
+    public static void testDrawable(display display, Drawable circles) throws Exception {
+        // Example implementation
+        circles.notify();
+        display.wait();
+        display.wait(250);  // Add relevant implementation for Drawable interface
+        // ...
+    }
 
-        Display display01 = new Display(50, 50, 600, 600);
-        Display display02 = new Display(800, 50, 400, 600);
-        display01.setBackground(Color.BLACK);
-        display02.setBackground(Color.BLACK);
+    public static void main(String[] args) throws Exception {
+        display display01 = new display();
+        display display02 = new display();
+        display01.setBackground();
+        display02.setBackground();
 
-        // Get Graphics graphic Object for Drawing in Window
-        Graphics graphic01 = display01.getGraphics();
-        Graphics graphic02 = display02.getGraphics();
+        // Create Fillable circles and test
+        Filable filableCircles = new CircularFillable(100, 100);  // Example initial position
+        testFillable(display01, filableCircles);
 
-        // TODO : Create Circles of a Fillable Type with graphics object 1
-
-        // TODO : Use testFillable to draw Fillable Circles
-
-        // TODO : Create Circles of a Drawable Type with graphics object 2
-
-        // TODO : Use testDrawable to draw Open Drawable Circles
-
+        // Create Drawable circles and test
+        Drawable drawableCircles = new DrawableCircle();  // Example implementation of DrawableCircle
+        testDrawable(display02, drawableCircles);
     }
 }

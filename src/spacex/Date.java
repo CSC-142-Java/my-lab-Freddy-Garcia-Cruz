@@ -22,5 +22,5 @@ public class Date {
         String date = String.format("%d-%s-%02d", day, month, year);
         return date.equals("0-Jan-0") ? "" : date;
     }
-    
+
 }
