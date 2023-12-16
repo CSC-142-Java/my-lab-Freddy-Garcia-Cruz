@@ -12,7 +12,7 @@ public class PointJUnitTest {
     Point p2;
 
     /*****************************************************
-     * Test method for {@link coordinates.Point#Point()}.
+     * Test method for {@link Point#Point()}.
      *****************************************************/
     @Test
     void testPoint() {
@@ -35,7 +35,7 @@ public class PointJUnitTest {
     }
 
     /*********************************************************************
-     * Test method for {@link coordinates.Point#Point(coordinates.Point)}.
+     * Test method for {@link Point#Point(Point)}.
      *********************************************************************/
     @Test
     void testPointPoint() {
@@ -61,7 +61,7 @@ public class PointJUnitTest {
     }
 
     /*************************************************************
-     * Test method for {@link coordinates.Point#Point(int, int)}.
+     * Test method for {@link Point#Point(int, int)}.
      *************************************************************/
     @Test
     void testPointIntInt() {
@@ -85,7 +85,7 @@ public class PointJUnitTest {
     }
 
     /************************************************************************
-     * Test method for {@link coordinates.Point#distanceFrom(int, int)}.
+     * Test method for {@link Point#distanceFrom(int, int)}.
      ************************************************************************/
     @Test
     void testDistanceFromOrigin() {
@@ -115,7 +115,7 @@ public class PointJUnitTest {
 
 
     /************************************************************************
-     * Test method for {@link coordinates.Point#distanceFrom(Point)}.
+     * Test method for {@link Point#distanceFrom(Point)}.
      ************************************************************************/
     @Test
     void testDistanceFrom() {
@@ -142,7 +142,7 @@ public class PointJUnitTest {
     }
 
     /********************************************************
-     * Test method for {@link coordinates.Point#equals(Object)}.
+     * Test method for {@link Point#equals(Object)}.
      ********************************************************/
     @Test
     void testEquals() {
@@ -172,7 +172,7 @@ public class PointJUnitTest {
     }
 
     /********************************************************
-     * Test method for {@link coordinates.Point#getX()}.
+     * Test method for {@link Point#getX()}.
      ********************************************************/
     @Test
     void testGetX() {
@@ -195,7 +195,7 @@ public class PointJUnitTest {
     }
 
     /********************************************************
-     * Test method for {@link coordinates.Point#getY()}.
+     * Test method for {@link Point#getY()}.
      ********************************************************/
     @Test
     void testGetY() {
@@ -219,7 +219,7 @@ public class PointJUnitTest {
 
     /***************************************************************************
      * Test method for
-     * {@link coordinates.Point#isCollinear(coordinates.Point, coordinates.Point)}.
+     * {@link Point#isCollinear(Point, Point)}.
      **************************************************************************/
     @Test
     void testIsCollinear() {
@@ -252,7 +252,7 @@ public class PointJUnitTest {
 
     /***************************************************************************
      * Test method for
-     * {@link coordinates.Point#isVertical(coordinates.Point)}.
+     * {@link Point#isVertical(Point)}.
      **************************************************************************/
     @Test
     void testIsVertical() {
@@ -278,7 +278,7 @@ public class PointJUnitTest {
     }
 
     /******************************************************************
-     * Test method for {@link coordinates.Point#move(int, int)}.
+     * Test method for {@link Point#move(int, int)}.
      ******************************************************************/
     @Test
     void testMove() {
@@ -307,7 +307,7 @@ public class PointJUnitTest {
     }
     
     /********************************************************************
-     * Test method for {@link coordinates.Point#setLocation(int, int)}.
+     * Test method for {@link Point#setLocation(int, int)}.
      *******************************************************************/
     @Test
     void testSetLocationIntInt() {
@@ -359,7 +359,7 @@ public class PointJUnitTest {
 
 
     /********************************************************
-     * Test method for {@link coordinates.Point#toString()}.
+     * Test method for {@link Point#toString()}.
      ********************************************************/
     @Test
     void testToString() {

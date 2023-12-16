@@ -1,4 +1,4 @@
-//package junits;
+package junits;//package junits;
 //
 //import static calculator.BMRCalculator.computeBMI;
 //import static calculator.BMRCalculator.computeBMR;

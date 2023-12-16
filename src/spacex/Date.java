@@ -16,11 +16,9 @@ public class Date {
         this.year   = year;
     }
 
-
     @Override
     public String toString() {
         String date = String.format("%d-%s-%02d", day, month, year);
         return date.equals("0-Jan-0") ? "" : date;
     }
-    
 }

@@ -7,6 +7,18 @@ public class Customer {
     private String type;
     private String country;
 
+    // Accessor "getter" methods for Customer Class
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getCountry() {
+        return country;
+    }
 
     //overloaded constructors
     public Customer(){
@@ -19,12 +31,7 @@ public class Customer {
         this.country  = country;
     }
 
-
-    //TODO : Create Accessor "gettor" methods for Customer Class
-
     public String toString(){
-        //TODO: update with display pattern discussed in design documentation
-        return "";
+        return "Name: " + name + ", Type: " + type + ", Country: " + country;
     }
-
 }

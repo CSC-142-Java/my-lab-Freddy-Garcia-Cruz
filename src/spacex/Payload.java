@@ -14,12 +14,30 @@ public class Payload {
         this.orbit = orbit;
     }
 
-    //TODO : Create Accessor "gettor" methods for Payload Class
+    // Accessor "getter" methods for Payload Class
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public double getMass() {
+        return mass;
+    }
+
+    public String getOrbit() {
+        return orbit;
+    }
 
     @Override
     public String toString() {
-        //TODO: update with display pattern discussed in design documentation
-        return "";
+        return "Payload{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", mass=" + mass +
+                ", orbit='" + orbit + '\'' +
+                '}';
     }
-
 }
