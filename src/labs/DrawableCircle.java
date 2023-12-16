@@ -1,4 +1,9 @@
 package labs;
 
-public class DrawableCircle implements Drawable {
+import draw.Drawable;
+
+public class DrawableCircle extends Drawable {
+    public DrawableCircle(Object p0) {
+        super();
+    }
 }

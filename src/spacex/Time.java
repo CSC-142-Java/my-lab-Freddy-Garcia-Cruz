@@ -5,18 +5,16 @@ public class Time {
     private int hour;
     private int minutes;
 
-    // constructor overloading
-
     public Time(){
-        //TODO : call second constructor at 5 hours and 30 minutes
+        this(5, 30); // call the second constructor at 5 hours and 30 minutes
     }
 
     public Time(int hour, int minutes) {
-        //TODO : add data field assignments with parameters
+        this.hour = hour;
+        this.minutes = minutes;
     }
 
-    //Accessor "gettors" Methods
-
+    // Accessor "getter" Methods
     public int getHour() {
         return hour;
     }
