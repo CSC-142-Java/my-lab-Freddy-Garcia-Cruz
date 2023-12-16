@@ -49,7 +49,7 @@ public class CirclesLab {
         circles.setLocation(circles.getX() + 50, circles.getY() - 50);
 
         // Draw fillable AZUL Circles
-        circles.setFillColor(); // Assuming BLUE is supposed to be AZUL here
+        circles.setFillColor();
         circles.fill();
 
         // Pause for 250 milliseconds
@@ -63,13 +63,13 @@ public class CirclesLab {
         display02.setBackground(Color.BLACK);
 
         // Create Circles of a Fillable Type with graphics object 1
-        Fillable fillableCircles = new FillableCircle(null); // Assuming FillableCircle is a concrete class
+        Fillable fillableCircles = new FillableCircle(null);
 
         // Use testFillable to draw Fillable Circles
         testFillable(display01, fillableCircles);
 
         // Create Circles of a Drawable Type with graphics object 2
-        Drawable drawableCircles = new DrawableCircle(null); // Assuming DrawableCircle is a concrete class
+        Drawable drawableCircles = new DrawableCircle(null);
 
         // Use testDrawable to draw Open Drawable Circles
         testDrawable(display02, drawableCircles);
