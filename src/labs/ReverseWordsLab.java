@@ -16,27 +16,27 @@ public class ReverseWordsLab {
     public static void read(String inputLocation, List<String> list) throws FileNotFoundException {
         File file = new File(inputLocation);
         Scanner scanner = new Scanner(file);
-        List<String> reverseList = new ArrayList<>(); // Fix
+        List<String> reverseList = new ArrayList<>();
 
         while (scanner.hasNextLine()) {
-            String line = scanner.nextLine(); // Read next line
-            String[] words = line.split(" "); // Split into words
-            StringBuilder sb = new StringBuilder(); // To build reversed line
-            for (int i = words.length - 1; i >= 0; i--) { // Reverse words
+            String line = scanner.nextLine();
+            String[] words = line.split(" ");
+            StringBuilder sb = new StringBuilder();
+            for (int i = words.length - 1; i >= 0; i--) {
                 sb.append(words[i]);
-                if (i > 0) sb.append(" "); // Add space between words
+                if (i > 0) sb.append(" ");
             }
-            reverseList.add(sb.toString()); // Add reversed line to list
+            reverseList.add(sb.toString());
         }
 
-        list.addAll(reverseList); // Add all to the provided list for further use
+        list.addAll(reverseList);
         scanner.close();
     }
 
     public static void write(String outputLocation, List<String> list) throws FileNotFoundException {
         PrintStream writer = new PrintStream(outputLocation);
         for (String line : list) {
-            writer.println(line); // Write out lines
+            writer.println(line);
         }
         writer.close();
     }
@@ -45,7 +45,7 @@ public class ReverseWordsLab {
         String inputLocation = "." + File.separator + "data" + File.separator + "words.txt";
         String outputLocation = "." + File.separator + "results" + File.separator + "reverse_words.txt";
 
-        List<String> list = new ArrayList<>(); // Use Array List
+        List<String> list = new ArrayList<>();
 
         intro();
         read(inputLocation, list);
