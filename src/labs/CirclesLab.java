@@ -72,6 +72,7 @@ public class CirclesLab {
         Drawable drawableCircles = new DrawableCircle(null);
 
         // Use testDrawable to draw Open Drawable Circles
-        testDrawable(display02, drawableCircles);
+        CirclesLab.<Display>testDrawable(display02,
+                drawableCircles);
     }
 }

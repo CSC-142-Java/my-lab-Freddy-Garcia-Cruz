@@ -48,7 +48,9 @@ public class ReverseWordsLab {
         List<String> list = new ArrayList<>();
 
         intro();
-        read(inputLocation, list);
-        write(outputLocation, list);
+        read(inputLocation,
+                list);
+        write(outputLocation,
+                list);
     }
 }
